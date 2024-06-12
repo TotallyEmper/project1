@@ -1281,7 +1281,7 @@ LoopSlam.MouseButton1Click:connect(function()
 end)
  
 local Anim = Instance.new("Animation")
-Anim.AnimationId = "rbxassetid://17526032106"
+Anim.AnimationId = "rbxassetid://17830369793"
 local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
 local MegaInsaneACTIVE = false
 MegaInsane.MouseButton1Click:connect(function()
