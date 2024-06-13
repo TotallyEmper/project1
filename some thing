@@ -37,7 +37,7 @@ local SpinDance = Instance.new("TextButton")--COMPLETE
 local FloorFaint = Instance.new("TextButton")--COMPLETE
 local JumpingJacks = Instance.new("TextButton")--COMPLETE
 local Spinner = Instance.new("TextButton")--COMPLETE
-local MegaInsane = Instance.new("TextButton")--COMPLETE
+local Hakari = Instance.new("TextButton")--COMPLETE
 local ArmDetach = Instance.new("TextButton")--COMPLETE
 local WeirdMove = Instance.new("TextButton")--COMPLETE
 local Faint = Instance.new("TextButton")--COMPLETE
@@ -252,17 +252,17 @@ Spinner.Text = "Spinner"
 Spinner.TextSize = 20
 Spinner.TextWrapped = true
  
-MegaInsane.Name = "MegaInsane"
-MegaInsane.Parent = ScrollingFrame
-MegaInsane.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
-MegaInsane.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
-MegaInsane.Position = UDim2.new(0, 168, 0, 192)
-MegaInsane.Size = UDim2.new(0, 119, 0, 34)
-MegaInsane.Font = Enum.Font.Highway
-MegaInsane.FontSize = Enum.FontSize.Size24
-MegaInsane.Text = "Mega Insane"
-MegaInsane.TextSize = 20
-MegaInsane.TextWrapped = true
+Hakari.Name = "Hakari"
+Hakari.Parent = ScrollingFrame
+Hakari.BackgroundColor3 = Color3.new(0.886275, 0.776471, 0.368627)
+Hakari.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
+Hakari.Position = UDim2.new(0, 168, 0, 192)
+Hakari.Size = UDim2.new(0, 119, 0, 34)
+Hakari.Font = Enum.Font.Highway
+Hakari.FontSize = Enum.FontSize.Size24
+Hakari.Text = "Hakari"
+Hakari.TextSize = 20
+Hakari.TextWrapped = true
  
 ArmDetach.Name = "ArmDetach"
 ArmDetach.Parent = ScrollingFrame
@@ -1283,21 +1283,21 @@ end)
 local Anim = Instance.new("Animation")
 Anim.AnimationId = "rbxassetid://17830369793"
 local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
-local MegaInsaneACTIVE = false
-MegaInsane.MouseButton1Click:connect(function()
-    MegaInsaneACTIVE = not MegaInsaneACTIVE
-    if MegaInsaneACTIVE then
-        MegaInsane.BackgroundColor3 = loc
+local HakariACTIVE = false
+Hakari.MouseButton1Click:connect(function()
+    HakariACTIVE = not HakariACTIVE
+    if HakariACTIVE then
+        Hakari.BackgroundColor3 = loc
         while wait() do
          if track.IsPlaying == false then
-            if MegaInsaneACTIVE then
+            if HakariACTIVE then
                 track:Play(.1, 0.5, 40)
             end
          end
         end
     else
         track:Stop()
-        MegaInsane.BackgroundColor3 = col
+        Hakari.BackgroundColor3 = col
     end
 end)
  
