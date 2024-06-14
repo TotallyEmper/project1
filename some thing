@@ -1281,7 +1281,7 @@ LoopSlam.MouseButton1Click:connect(function()
 end)
  
 local Anim = Instance.new("Animation")
-Anim.AnimationId = "rbxassetid://17830369793"
+Anim.AnimationId = "rbxassetid://17853910739"
 local track = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
 local HakariACTIVE = false
 Hakari.MouseButton1Click:connect(function()
